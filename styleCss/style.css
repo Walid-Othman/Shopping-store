@@ -173,7 +173,7 @@ ul {
 /* section one start */
 
 #section-one {
-    background-image: url('/imgaes/hero4.png');
+    background-image: url('./imgaes/hero4.png');
     background-size: cover;
     background-position: top 0% right 0;
     background-repeat: no-repeat;
@@ -209,7 +209,7 @@ ul {
 #section-one button {
     outline: 0;
     border: 0;
-    background-image: url(/imgaes/button.png);
+    background-image: url(./imgaes/button.png);
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
@@ -399,7 +399,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/imgaes/banner/b2.jpg');
+    background-image: url('./imgaes/banner/b2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -449,11 +449,11 @@ ul {
 }
 
 #section-six .row .card-one {
-    background-image: url("/imgaes/banner/b17.jpg");
+    background-image: url("./imgaes/banner/b17.jpg");
 }
 
 #section-six .row .card-two {
-    background-image: url("/imgaes/banner/b10.jpg");
+    background-image: url("./imgaes/banner/b10.jpg");
 }
 
 #section-six .row .card-one,
@@ -506,15 +506,15 @@ ul {
 }
 
 #section-six .row-two .card-one {
-    background-image: url('/imgaes/banner/b7.jpg');
+    background-image: url('./imgaes/banner/b7.jpg');
 }
 
 #section-six .row-two .card-two {
-    background-image: url('/imgaes/banner/b4.jpg');
+    background-image: url('./imgaes/banner/b4.jpg');
 }
 
 #section-six .row-two .card-three {
-    background-image: url('/imgaes/banner/b18.jpg');
+    background-image: url('./imgaes/banner/b18.jpg');
 }
 
 #section-six .row-two .card-one,
@@ -556,7 +556,7 @@ ul {
 /* section seven start */
 
 #section-seven {
-    background-image: url("/imgaes/banner/b14.png");
+    background-image: url("./imgaes/banner/b14.png");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
@@ -694,7 +694,7 @@ footer .copyright p {
 /* ;;;;;;shop page starts here */
 
 #section-one-pag-shop {
-    background-image: url('/imgaes/banner/b1.jpg');
+    background-image: url('./imgaes/banner/b1.jpg');
     background-size: cover;
     height: 40vh;
     display: flex;
@@ -814,7 +814,7 @@ footer .copyright p {
 /* ::::blog page starts here:::::::: */
 
 #section-one-pag-blog {
-    background-image: url('/imgaes/banner/b19.jpg');
+    background-image: url('./imgaes/banner/b19.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
@@ -906,7 +906,7 @@ footer .copyright p {
 
 /* ::::about page starts here:::::::: */
 #section-one-pag-blog.about-bg {
-    background-image: url('/imgaes/about/banner.png');
+    background-image: url('./imgaes/about/banner.png');
 }
 
 .marquee {
