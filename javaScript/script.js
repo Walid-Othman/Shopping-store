@@ -2,6 +2,7 @@ function navBar() {
     let bar = document.getElementById('bar')
     let navbar = document.getElementById('navbar')
     let position = 'open'
+    if(bar)
     bar.addEventListener('click', () => {
         if (localStorage.getItem('position') === 'open') {
             navbar.style.right = "0px"
