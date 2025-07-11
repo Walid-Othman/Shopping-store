@@ -1229,6 +1229,7 @@ footer .copyright p {
 /* :::::login page starts here :::::*/
 
 #login {
+    position: relative;
     width: 80%;
     margin: 50px auto;
     text-align: center;
@@ -1268,6 +1269,24 @@ footer .copyright p {
 
 #login a {
     text-decoration: none;
+}
+
+
+#show-password{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.edit{
+      top: 65% !important;
+    right: 30% !important;
 }
 
 
@@ -1474,6 +1493,23 @@ footer .copyright p {
         border: 1px solid #e1e1e1;
         border-radius: 8px;
     }
+
+    #show-password {
+    position: absolute;
+    top: 51%;
+    right: 7%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.edit{
+      top: 65% !important;
+    right: 7% !important;
+}
 
     
 

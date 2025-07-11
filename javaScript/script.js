@@ -2,22 +2,22 @@ function navBar() {
     let bar = document.getElementById('bar')
     let navbar = document.getElementById('navbar')
     let position = 'open'
-    if(bar)
-        if(navbar)
-    bar.addEventListener('click', () => {
-        if (localStorage.getItem('position') === 'open') {
-            navbar.style.right = "0px"
-            console.log('Iam working')
-            // bar.style.marginLeft = '-380px'
-            position = 'close'
-        } else {
-            navbar.style.right = "-100%"
-            console.log('Iam working')
-            // bar.style.marginLeft = '0px'
-            position = 'open'
-        }
-        localStorage.setItem('position', position)
-    })
+    if (bar)
+        if (navbar)
+            bar.addEventListener('click', () => {
+                if (localStorage.getItem('position') === 'open') {
+                    navbar.style.right = "0px"
+                    console.log('Iam working')
+                    // bar.style.marginLeft = '-380px'
+                    position = 'close'
+                } else {
+                    navbar.style.right = "-100%"
+                    console.log('Iam working')
+                    // bar.style.marginLeft = '0px'
+                    position = 'open'
+                }
+                localStorage.setItem('position', position)
+            })
     window.addEventListener('click', e => {
         e.stopPropagation()
         if (e.target !== bar && e.target !== navbar) {
@@ -35,13 +35,14 @@ function replaceImages() {
     let smallImg = document.getElementsByClassName('small-img-col')
     if (smallImg)
         if (mainImg)
-           
-if(smallImg.length>0){
 
-    for(let i =0;i<smallImg.length;i++)
-        smallImg[i].addEventListener('click',()=>{
-    mainImg.src = smallImg[i].src })
-}
+            if (smallImg.length > 0) {
+
+                for (let i = 0; i < smallImg.length; i++)
+                    smallImg[i].addEventListener('click', () => {
+                        mainImg.src = smallImg[i].src
+                    })
+            }
 
 }
 
@@ -186,6 +187,56 @@ function up() {
 
 
 
+// Show password function 
+function showPassWord() {
+    let showPassWord = document.getElementById('show-password')
+    let password = document.getElementById('password')
+    let mood = 'show'
+    if (showPassWord && password) {
+        showPassWord.addEventListener('click', () => {
+            if (localStorage.getItem('mood') === 'show') {
+                password.type = 'text'
+                mood = 'hiden'
+                showPassWord.textContent = '👁️'
+            } else {
+                password.type = 'password'
+                mood = 'show'
+                showPassWord.textContent = '🙈'
+            }
+            localStorage.setItem('mood', mood)
+        })
+
+    }
+}
+
+// show password function singUp
+
+function showPassWordSingUp() {
+    let showPassWord = document.getElementById('show-password')
+    let password = document.getElementById('singup-password')
+    let mood = 'show'
+    if (showPassWord && password) {
+        showPassWord.addEventListener('click', () => {
+            if (localStorage.getItem('mood') === 'show') {
+                password.type = 'text'
+                showPassWord.textContent = '👁️'
+                mood = 'hiden'
+            } else {
+                password.type = 'password'
+                showPassWord.textContent = '🙈'
+                mood = 'show'
+            }
+            localStorage.setItem('mood', mood)
+        })
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -206,12 +257,14 @@ function logOut() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    navBar()
+    // navBar()
     showProduct()
     replaceImages()
     up()
     singUp()
     logIn()
+    showPassWord()
+    showPassWordSingUp()
     welcome()
     // darkMood()
     logOut()
