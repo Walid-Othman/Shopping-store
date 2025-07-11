@@ -127,13 +127,14 @@ ul {
 
 }
 
-#navbar a:hover,
-#navbar a.active {
+/* #navbar a.active , */
+#navbar a:hover
+{
     color: #088178;
 
 }
 
-#navbar a.active::after,
+/* #navbar a.active::after, */
 #navbar a:hover::after {
     content: "";
     width: 50%;
@@ -319,11 +320,14 @@ ul {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 15px 0;
     transition: 0.2s ease;
+    outline: none;
 }
 
 #section-three .card:hover,
 #section-five .card:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transform: scale(1.1);
+    outline: none;
 }
 
 #section-three .cards img,
@@ -391,6 +395,17 @@ ul {
     background-color: #e8f6ea;
     border: 1px solid #cce7d0;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* section three end */
 
@@ -1511,7 +1526,6 @@ footer .copyright p {
     right: 7% !important;
 }
 
-    
 
     /* :::::login page ends here :::::*/
 
@@ -1548,6 +1562,11 @@ footer .copyright p {
     h1 {
         font-size: 32px;
     }
+       #section-one p {
+    font-size: 16;
+    color: #e9d626;
+    margin: 15px 0 20 0;
+}
 
     #section-two {
         justify-content: space-between;
@@ -1782,3 +1801,21 @@ footer .copyright p {
 body {
     overflow-x: hidden;
 } */
+
+*:focus {
+    outline: none !important;
+}
+
+#section-three .card:active,
+#section-five .card:active {
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#section-three .card:focus,
+#section-five .card:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+

@@ -113,7 +113,21 @@ function logIn() {
         })
 
 }
+ 
+// function for save staue for user login or logout
 
+function chickUserLogOrOut(){
+
+window.addEventListener('DOMContentLoaded',(e)=>{
+    e.preventDefault()
+  let location =  window.location.pathname === '/index.html'
+    let user =JSON.parse(localStorage.getItem('logInUsers'))
+    if (user && location)
+        window.location.href='home.html'
+  
+})
+
+}
 
 // welcome function 
 
@@ -257,10 +271,11 @@ function logOut() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-     navBar()
+    navBar()
     showProduct()
     replaceImages()
     up()
+    chickUserLogOrOut()
     singUp()
     logIn()
     showPassWord()
