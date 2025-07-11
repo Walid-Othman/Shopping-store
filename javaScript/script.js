@@ -3,6 +3,7 @@ function navBar() {
     let navbar = document.getElementById('navbar')
     let position = 'open'
     if(bar)
+        if(navbar)
     bar.addEventListener('click', () => {
         if (localStorage.getItem('position') === 'open') {
             navbar.style.right = "0px"
@@ -119,7 +120,7 @@ function welcome() {
     let user = JSON.parse(localStorage.getItem('logInUsers'))
     let hello = document.getElementById('greets')
     if (user && hello) {
-        hello.textContent = `WELCOME: ${user.firstName.toUpperCase()} 👋`
+        hello.textContent = `WELCOME : ${user.firstName.toUpperCase()} 👋`
         localStorage.setItem('loginUsers', JSON.stringify(user))
     }
 
