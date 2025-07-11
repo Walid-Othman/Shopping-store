@@ -1538,16 +1538,21 @@ footer .copyright p {
     #section-one {
 
         padding: 0 20px;
-        background-position: 55%;
+        background-position: 65%;
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 23px;
     }
 
     h1 {
-        font-size: 38px;
+        font-size: 32px;
     }
+       #section-one p {
+    font-size: 16;
+    color: #e9d626;
+    margin: 15px 0 20 0;
+}
 
     #section-two {
         justify-content: space-between;
