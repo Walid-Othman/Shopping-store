@@ -257,7 +257,7 @@ function logOut() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // navBar()
+     navBar()
     showProduct()
     replaceImages()
     up()
