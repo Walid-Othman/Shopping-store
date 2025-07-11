@@ -116,17 +116,31 @@ function logIn() {
  
 // function for save staue for user login or logout
 
-function chickUserLogOrOut(){
+// function chickUserLogOrOut(){
 
-window.addEventListener('DOMContentLoaded',(e)=>{
-    e.preventDefault()
-  let location =  window.location.pathname === '/index.html'
-    let user =JSON.parse(localStorage.getItem('logInUsers'))
-    if (user && location)
-        window.location.href='home.html'
+// window.addEventListener('DOMContentLoaded',(e)=>{
+//   let location =  window.location.pathname === '/index.html'||  window.location.pathname === '/'
+//     let user =JSON.parse(localStorage.getItem('logInUsers'))
+//     if (user && location)
+//         window.location.href='home.html'
   
-})
+// })
 
+// }
+
+
+
+function checkUserLoggedIn() {
+  window.addEventListener('DOMContentLoaded', () => {
+    const path = window.location.pathname;
+    const isLoginPage = path.endsWith('index.html') || path === '/Shopping-store/';
+
+    const user = JSON.parse(localStorage.getItem('logInUsers'));
+
+    if (user && isLoginPage) {
+      window.location.href = 'home.html';
+    }
+  });
 }
 
 // welcome function 
