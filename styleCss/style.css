@@ -127,14 +127,14 @@ ul {
 
 }
 
-/* #navbar a.active , */
+#navbar a.active ,
 #navbar a:hover
 {
     color: #088178;
 
 }
 
-/* #navbar a.active::after, */
+#navbar a.active::after,
 #navbar a:hover::after {
     content: "";
     width: 50%;
@@ -1802,20 +1802,7 @@ body {
     overflow-x: hidden;
 } */
 
-*:focus {
-    outline: none !important;
-}
 
-#section-three .card:active,
-#section-five .card:active {
-    background-color: transparent !important;
-    outline: none !important;
-    box-shadow: none !important;
-}
 
-#section-three .card:focus,
-#section-five .card:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
+
 
