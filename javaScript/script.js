@@ -201,7 +201,7 @@ function showPassWord() {
             } else {
                 password.type = 'password'
                 mood = 'show'
-                showPassWord.textContent = '🙈'
+                showPassWord.textContent = '👁‍🗨'
             }
             localStorage.setItem('mood', mood)
         })
@@ -223,7 +223,7 @@ function showPassWordSingUp() {
                 mood = 'hiden'
             } else {
                 password.type = 'password'
-                showPassWord.textContent = '🙈'
+                showPassWord.textContent = '👁‍🗨'
                 mood = 'show'
             }
             localStorage.setItem('mood', mood)
