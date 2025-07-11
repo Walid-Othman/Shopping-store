@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showProduct()
     replaceImages()
     up()
-    chickUserLogOrOut()
+    checkUserLoggedIn()
     singUp()
     logIn()
     showPassWord()
